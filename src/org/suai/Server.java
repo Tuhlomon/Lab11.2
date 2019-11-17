@@ -11,5 +11,6 @@ public class Server {
         GUI gui = new GUI(clientSocket, IPAddress, 9876, "Server");
         Thread wr = new Thread(new WorkerReader(gui, clientSocket));
         wr.start();
+        System.out.println("Github commit test c:");
     }
 }
